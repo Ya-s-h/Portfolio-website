@@ -9,14 +9,11 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Yash Aggarwal </span>
-            from <span className="purple"> Rampur Bushahar, India.</span>
-            <br /> I am a final year student pursuing Bachelor of Technology in
-            Computer Science at Bennett University Greater Noida.
-            <br />
-            {/* Additionally, I am currently employed as a software developer at
-            Juspay.
-            <br /> */}
-            <br />
+            from <span className="purple">India</span>. <br></br>
+            Currently Analyst at Ernst and Young LLP specializing in enterprise automation and backend Engineering.<br></br>
+            Expert in Python, Mongodb and Elastic Search, focused on building fast data system and reliable scraping pipelines.<br></br>
+            Previously a software developer at lyxel labs, where I worked on real-world backend systems and developed a chatbot from scratch
+            that handles multiple chat, maintains chat history and conversation context. <br></br>
             Apart from coding, some other activities that I love to do!
           </p>
           <ul>
@@ -27,7 +24,7 @@ function AboutCard() {
               <ImPointRight /> Reading Comics
             </li>
             <li className="about-activity">
-              <ImPointRight /> Web Surfing
+              <ImPointRight /> Web Development
             </li>
           </ul>
 

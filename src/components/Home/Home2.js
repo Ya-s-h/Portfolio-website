@@ -2,11 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -19,40 +15,19 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Diving into coding, I've discovered a newfound fervor and picked
-              up invaluable lessons along the way. 🚀🧠
-              <br />
-              <br />I am fluent in
-              <i>
-                <b className="purple">
-                  {" "}
-                  Python, Javascript and Shell Scripting.{" "}
-                </b>
-              </i>
+              I'm a backend-focused engineer working on enterprise automation
+              and scalable systems. I build APIs, data pipelines, and automation
+              using
+              <b className="purple"> Python, JavaScript, and MongoDB</b>, and
+              I've spent a lot of time improving data retrieval performance and
+              with a focus on performance and reliability.
               <br />
               <br />
-              My main focus is building &nbsp;
-              <i>
-                <b className="purple">Server side logic for Web Application </b>{" "}
-                and My Interest lies in field of{" "}
-                <b className="purple">
-                  Cyber Security and Artificial Intelligence.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> Express.js and MongoDB</b>
-              </i>
+              Previously at Lyxel Labs, I built backend systems and developed a
+              chatbot from scratch that managed chat history, conversation
+              context, and multiple users. I'm currently exploring practical
+              uses of AI and automation with tools like{" "}
+              <b className="purple">LangChain and MCP</b>.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -78,16 +53,6 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
-              {/* <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li> */}
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/yash-aggarwal-76a2851ba/"
@@ -98,16 +63,6 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              {/* <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li> */}
             </ul>
           </Col>
         </Row>

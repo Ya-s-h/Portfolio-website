@@ -1,9 +1,9 @@
 {
   "name": "portfolio-website",
+  "compatibility_date": "2026-01-25",
   "workers_dev": true,
-  "compatibility_date": "2022-04-05",
   "assets": {
-    "bucket": "./build",
+    "directory": "./build",
     "not_found_handling": "single-page-application"
   },
   "observability": {

@@ -1,7 +1,7 @@
 import { Box, Container, Typography, useTheme } from "@mui/material";
 import TextHighlighter from "../components/TextHighlighter";
 import Parapragh from "../components/Paragraph";
-
+import Intro from "../components/Intro";
 /**
  * Home Component - Landing Page
  *
@@ -24,21 +24,7 @@ function Home() {
           textAlign: "left",
         }}
       >
-        {/* Main Greeting */}
-        <Typography
-          variant="h3"
-          sx={{
-            mb: 3,
-            fontSize: { xs: "1.8rem", sm: "2.5rem", md: "3rem" },
-            fontWeight: 700,
-            color: theme.palette.secondary.main,
-            backgroundClip: "text",
-            WebkitBackgroundClip: "text",
-            // WebkitTextFillColor: "transparent",
-          }}
-        >
-          Hi, I'm Yash Aggarwal
-        </Typography>
+        <Intro />
 
         {/* Introduction Section */}
         <Box
@@ -50,6 +36,17 @@ function Home() {
             gap: 3,
           }}
         >
+          <Typography
+            variant="h6"
+            sx={{
+              mb: 4,
+              fontSize: { xs: "1.1rem", sm: "1.8rem", md: "2.3rem" },
+              fontWeight: 700,
+              color: "text.primary",
+            }}
+          >
+            Let me Introduce myself
+          </Typography>
           {/* Professional Identity */}
           <Parapragh>
             I'm a <TextHighlighter>backend-focused engineer</TextHighlighter>{" "}

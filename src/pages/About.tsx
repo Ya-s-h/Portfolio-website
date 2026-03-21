@@ -1,6 +1,7 @@
 import { Box, Container, Typography, useTheme, Grid } from "@mui/material";
 import TextHighlighter from "../components/TextHighlighter";
 import Parapragh from "../components/Paragraph";
+import Github from "../components/Github";
 interface AboutProps {
   activities?: string[];
 }
@@ -63,7 +64,7 @@ function About({
               <Parapragh>
                 Currently
                 <TextHighlighter>
-                  Analyst at Ernst and Young LLP
+                  Analyst 3 at Ernst and Young LLP
                 </TextHighlighter>{" "}
                 specializing in
                 <TextHighlighter>enterprise automation</TextHighlighter> and
@@ -170,6 +171,7 @@ function About({
           </Grid>
         </Grid>
       </Box>
+      <Github />
     </Container>
   );
 }

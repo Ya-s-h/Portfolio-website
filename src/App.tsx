@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import ResponsiveAppBar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
         {/* Placeholder routes for future pages */}
         <Route
           path="/projects"

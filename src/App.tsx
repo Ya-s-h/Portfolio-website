@@ -3,6 +3,7 @@ import ResponsiveAppBar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
 
 function App() {
   return (
@@ -16,12 +17,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
-        {/* Placeholder routes for future pages */}
-        <Route
-          path="/projects"
-          element={<div>Projects Page - Coming Soon</div>}
-        />
-        <Route path="/resume" element={<div>Resume Page - Coming Soon</div>} />
+        <Route path="/resume" element={<Resume />} />
         {/* Redirect unknown routes to home */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

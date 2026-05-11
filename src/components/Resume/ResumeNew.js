@@ -1,20 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import pdf from "../../Assets/Resume-Yash_Aggarwal.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
-  const [width, setWidth] = useState(1200);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
-
   return (
     <div>
       <Container fluid className="resume-section">
@@ -24,6 +15,7 @@ function ResumeNew() {
             variant="primary"
             href={pdf}
             target="_blank"
+            rel="noreferrer"
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
@@ -31,17 +23,49 @@ function ResumeNew() {
           </Button>
         </Row>
 
-        <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
+        <Row
+          className="resume"
+          style={{
+            justifyContent: "center",
+            marginTop: "2rem",
+            position: "relative",
+            zIndex: 1,
+          }}
+        >
+          <div
+            style={{
+              width: "100%",
+              maxWidth: "900px",
+              minHeight: "720px",
+              borderRadius: "12px",
+              overflow: "hidden",
+              boxShadow: "0 10px 30px rgba(0,0,0,0.25)",
+              backgroundColor: "#151329",
+            }}
+          >
+            <embed
+              src={`${pdf}#toolbar=1&navpanes=0&scrollbar=1`}
+              type="application/pdf"
+              width="100%"
+              height="820px"
+              aria-label="Resume PDF"
+              style={{ border: "none" }}
+            />
+          </div>
         </Row>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row
+          style={{
+            justifyContent: "center",
+            position: "relative",
+            marginTop: "2rem",
+          }}
+        >
           <Button
             variant="primary"
             href={pdf}
             target="_blank"
+            rel="noreferrer"
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />

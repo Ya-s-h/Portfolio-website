@@ -47,6 +47,10 @@ button:focus {
   height: 100vh;
 }
 
+#tsparticles {
+  pointer-events: none !important;
+}
+
 /* --------- */
 /*Scrollbar   */
 /* --------- */
